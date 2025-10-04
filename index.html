@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekstil Atıkları</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+    body { font-family:'Roboto',sans-serif; background-color:#f5f5f5; color:#333; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+
+    header {
+      position: fixed; width:100%; background-color:#fff; padding:15px 50px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:1000;
+    }
+    nav { display:flex; justify-content:space-between; align-items:center; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav ul li a:hover { color:#007BFF; transition:0.3s; }
+
+    .hero {
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1611095564983-776c59bba646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') center/cover no-repeat;
+      display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+      color:#00BFFF; position:relative; overflow:hidden;
+      padding: 20px;
+    }
+    .hero h1 { font-size:3rem; animation: fadeInDown 2s ease; margin-bottom:20px;}
+    .hero p { font-size:1.2rem; max-width:700px; color:#000; margin-bottom:10px; }
+    @keyframes fadeInDown { from {opacity:0; transform:translateY(-50px);} to {opacity:1; transform:translateY(0);} }
+
+    section { padding:80px 30px; }
+    h2 { text-align:center; margin-bottom:40px; font-size:2.2rem; color:#800000; }
+
+    .gallery, .projects, .team { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+
+    .gallery-item, .project-card, .team-member {
+      background-color:#fff; border-radius:15px; padding:15px; box-shadow:0 2px 10px rgba(0,0,0,0.1);
+      transition:transform 0.3s; text-align:center;
+      width:280px;
+    }
+    .gallery-item img, .project-card img, .team-member img { width:100%; border-radius:10px; margin-bottom:10px; object-fit:cover; }
+    .gallery-item:hover, .project-card:hover, .team-member:hover { transform: translateY(-5px); }
+
+    .faq { max-width:800px; margin:0 auto; }
+    .faq-item { margin-bottom:15px; background-color:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); transition:transform 0.3s; }
+    .faq-item:hover { transform: translateY(-5px); }
+
+    footer { text-align:center; padding:30px; background-color:#fff; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+
+    @media(max-width:768px) {
+      nav ul { gap:10px; flex-wrap:wrap; }
+      .gallery-item, .project-card, .team-member { width:90%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><a href="#hero"><strong>TekstilAtık</strong></a></div>
+    <ul>
+      <li><a href="#action">Biz Ne Yapabiliriz?</a></li>
+      <li><a href="#gallery">Görseller</a></li>
+      <li><a href="#projects">Projeler</a></li>
+      <li><a href="#faq">SSS</a></li>
+      <li><a href="#team">Takım</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <h1>Tekstil Atıkları Hakkında Bilgi</h1>
+  <p><strong>Tekstil Atığı Nedir?</strong> Kullanılmış veya üretim sürecinden kalan tekstil ürünleri ve malzemelere tekstil atığı denir. Bunlar genellikle kıyafet, kumaş ve aksesuarları içerir.</p>
+  <p><strong>Neden Tekstil Atıkları Dünya İçin Tehlike?</strong> Tekstil atıkları çöplere atıldığında çürümez ve kimyasal içerikleriyle çevreye zarar verir. Su ve toprak kirliliğine sebep olur, ayrıca atmosfere salınan gazlarla iklim değişikliğini hızlandırır.</p>
+</section>
+
+<section id="action">
+  <h2>Biz Ne Yapabiliriz?</h2>
+  <p>Evlerimizde kullanmadığımız kıyafetleri biriktirip geri dönüşüm kutularına verebiliriz. Ayrıca bilinçli tüketim yaparak gereksiz üretimi azaltabilir, tekstil atıklarını toplama projelerine destek olabiliriz. Tekstil atıklarının geri dönüşümü çevreyi korur ve ekonomik değer yaratır. Küçük adımlar, büyük değişim yaratır.</p>
+</section>
+
+<section id="gallery">
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1599946926897-40f3161f0381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Atık 1">
+      <p>Tekstil atıkları üretim sonrası kalan kumaş ve iplikleri gösterir. Bu atıklar ayrıştırılarak yeniden kullanılabilir.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1600180758895-3a5c246c75fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Atık 2">
+      <p>Kullanılmış kıyafetler geri dönüşüm merkezlerine yönlendirilerek çevreye zarar vermeden tekrar değerlendirilebilir.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1576765607923-0f66f432ffed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Atık 3">
+      <p>Tekstil atıkları yeni ürün üretiminde kullanılabilir ve böylece doğal kaynakların tüketimi azalır.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projelerimiz</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1581093588401-7b83c3f3b72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Fabricks Projesi">
+      <h3>Fabricks Projesi</h3>
+      <p>Clarisse Merlet, Fransız bir mimar ve girişimci olup, FabBRICK adlı şirketin kurucusudur. 2017 yılında mimarlık öğrencisiyken, inşaat sektörünün çevresel etkilerini azaltmak amacıyla alternatif malzeme arayışına girmiştir. Bu süreçte, tekstil atıklarını kullanarak inşaat malzemeleri üretme fikri doğmuştur. 2018 yılında FabBRICK'i kurarak, eski kıyafetleri tuğlaya dönüştüren yenilikçi bir üretim süreci geliştirmiştir.
+          FabBRICK, atıl durumdaki tekstil atıklarını, doğal ve ekolojik bir bağlayıcı ile birleştirerek estetik ve fonksiyonel tuğlalara dönüştüren bir yaratıcı geri dönüşüm şirketidir. Bu tuğlalar, ses ve ısı yalıtımı özellikleriyle iç mekanlarda duvar kaplaması, mobilya ve dekoratif objeler olarak kullanılmaktadır</p>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Battaniye Projesi">
+      <h3>Atık Kumaşlardan Battaniye</h3>
+      <p>Bu projede, kullanılmayan veya artık kıyafet ve kumaş parçaları toplanarak tekrar değerlendirilmektedir. Toplanan malzemeler, hijyen ve kalite standartlarına uygun şekilde temizlenip işlenir. Ardından, bu kumaşlar kullanılarak sıcak, dayanıklı ve estetik battaniye ve yastıklar üretilir. Projenin amacı sadece atıkları azaltmak değil, aynı zamanda düşük maliyetli ve çevre dostu ürünler sunarak hem insanların ihtiyaçlarını karşılamak hem de geri dönüşüm bilincini artırmaktır.</p>
+    </div>
+  </div>
+</section>
+.projects {
+  display: flex;
+  flex-direction: column; /* Kartları alt alta diz */
+  gap: 25px; /* Kartlar arası boşluk */
+  align-items: center; /* Ortala */
+}
+
+<section id="faq">
+  <h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <strong>1. Tekstil atığı nedir?</strong>
+        <p>Kullanılmış veya üretim sürecinden kalan tekstil ürünleri ve malzemelere tekstil atığı denir.</p>
+      </div>
+      <div class="faq-item">
+        <strong>2. Tekstil atıkları nasıl geri dönüştürülür?</strong>
+        <p>Atıklar liflerine ayrılarak yeni kumaş veya ürünlerin üretiminde kullanılabilir.</p>
+      </div>
+      <div class="faq-item">
+        <strong>3. Evden tekstil atığı nasıl toplanır?</strong>
+        <p>Kullanılmayan kıyafetleri ve kumaşları ayrı bir kutuda biriktirerek geri dönüşüm merkezlerine verebilirsiniz.</p>
+      </div>
+      <div class="faq-item">
+        <strong>4. Tekstil atıklarının çevreye etkisi nedir?</strong>
+        <p>Çöpe atılan tekstil atıkları çürümez ve kimyasal içerikleri nedeniyle çevreye zarar verir.</p>
+      </div>
+      <div class="faq-item">
+        <strong>5. Tekstil atıklarından neler üretilebilir?</strong>
+        <p>Yeni kumaş, izolasyon malzemesi, temizlik bezleri ve hatta dekoratif ürünler üretilebilir.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Takım -->
+  <section id="team">
+    <h2>Takımımız</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120.png?text=Ali" alt="Ali">
+        <h3>Ali</h3>
+        <p>Proje Yöneticisi</p>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120.png?text=Ayşe" alt="Ayşe">
+        <h3>Ayşe</h3>
+        <p>Web Geliştirici</p>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120.png?text=Mehmet" alt="Mehmet">
+        <h3>Mehmet</h3>
+        <p>Tasarımcı</p>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/120.png?text=Zeynep" alt="Zeynep">
+        <h3>Zeynep</h3>
+        <p>İçerik Uzmanı</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Tekstil Atıkları. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
